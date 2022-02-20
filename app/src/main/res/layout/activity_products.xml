@@ -1,0 +1,107 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:backgroundTint="#DFE7E8"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:titleTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.Toolbar.Surface"
+        />
+    <Spinner
+        android:layout_margin="10dp"
+        android:id="@+id/spinner"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:entries="@array/filter"
+        android:spinnerMode="dialog"
+        android:textSize="100dp"
+        android:textColor="#3F51B5"
+        android:padding="5dp"
+        style="@style/TextAppearance.AppCompat.Display4">
+    </Spinner>
+    <Spinner
+        android:layout_margin="10dp"
+        android:id="@+id/spinner2"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintRight_toRightOf="parent"
+        android:entries="@array/sort"
+        android:spinnerMode="dialog"
+        android:textSize="100dp"
+        android:textColor="#3F51B5"
+        android:padding="5dp"
+        style="@style/TextAppearance.AppCompat.Display4">
+    </Spinner>
+<!--    <TextView-->
+<!--        android:id="@+id/naslov"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="sans-serif-light"-->
+<!--        android:gravity="center"-->
+<!--        android:text="My activites"-->
+<!--        android:padding="10dp"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/toolbar"></TextView>-->
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/linija"-->
+<!--        android:layout_height="1dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/naslov"-->
+<!--        android:background="@android:color/darker_gray"/>-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"></androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="45dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="#74DCEA"
+        android:text="+"
+        android:textSize="20dp"
+        android:onClick="novi"
+        android:layout_margin="10dp"
+        app:cornerRadius="40dp"
+        android:visibility="gone"></Button>
+    <Button
+        android:id="@+id/new_del"
+        android:layout_width="45dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="#74DCEA"
+        android:text="+"
+        android:textSize="20dp"
+        android:onClick="new_del"
+        android:layout_margin="10dp"
+        app:cornerRadius="40dp"
+        android:visibility="gone"></Button>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

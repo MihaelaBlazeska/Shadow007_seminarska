@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.24537037037037038" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.24537037037037038" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.24537037037037038" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24537037037037038" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_add_delivery.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_add_new_shipping.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_add_product.xml" value="0.264" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_admin.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_cart_view.xml" value="0.2" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_delivery.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_delivery_company.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_desc.xml" value="0.264" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_desc2.xml" value="0.6945812807881774" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_main.xml" value="0.13772893772893774" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_maps.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_order_view.xml" value="0.2" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_orders.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_products.xml" value="0.3263888888888889" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_user.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/activity_user2.xml" value="0.11676798378926039" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/logout.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/main_menu.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/my_row.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/my_row2.xml" value="0.176" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/my_row3.xml" value="0.176" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/my_row4.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/myrow2.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/settings_activity.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/layout/success.xml" value="0.2" />
+        <entry key="..\:/Users/Martin/AndroidStudioProjects/Shadow007/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

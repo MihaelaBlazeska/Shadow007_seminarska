@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderViewActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:title="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:backgroundTint="#DFE7E8"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:titleTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.Toolbar.Surface"
+        />
+    <!--    <TextView-->
+    <!--        android:id="@+id/naslov"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="sans-serif-light"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="My activites"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/toolbar"></TextView>-->
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:id="@+id/linija"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/naslov"-->
+    <!--        android:background="@android:color/darker_gray"/>-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"></androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:id="@+id/linija1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/total_price"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Final price"
+        app:layout_constraintRight_toRightOf="parent"></TextView>
+    <View
+        android:id="@+id/linija2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/total_price"
+        android:background="@android:color/darker_gray"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/map"
+        android:backgroundTint="#DFE7E8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="40dp"
+        android:layout_marginTop="10dp"
+        android:outlineAmbientShadowColor="@color/design_default_color_primary"
+        android:background="@color/design_default_color_primary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distance"
+            android:text="User is 0.0011km away"
+            android:textColor="@color/white"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+        <Button
+            android:id="@+id/showmap"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:drawableTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/distance"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:onClick="showmap"
+            style="@style/Widget.AppCompat.Button.Borderless"
+
+            ></Button>
+        <TextView
+            android:id="@+id/voul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:text=" Mihaela Blazeska"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/showmap"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:id="@+id/phone"
+            android:text=" +389111111"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/voul"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:textColor="@color/white"
+            android:text=" mihaela@gmail.com"
+            app:layout_constraintTop_toBottomOf="@+id/phone"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="accept order"
+        android:textStyle="bold"
+        android:textColor="#4F000000"
+        android:backgroundTint="#74DCEA"
+        android:visibility="gone"
+        android:onClick="accept"></Button>
+    <Button
+        android:id="@+id/accept2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="accept for delivery"
+        android:textStyle="bold"
+        android:textColor="#4F000000"
+        android:backgroundTint="#74DCEA"
+        android:visibility="gone"
+        android:onClick="accept_for_del"></Button>
+    <Button
+        android:id="@+id/ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Shipped"
+        android:textStyle="bold"
+        android:textColor="#4F000000"
+        android:backgroundTint="#74DCEA"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:onClick="ship"></Button>
+    <TextView
+        android:id="@+id/wait_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Waiting for the order to be delivered"
+        android:textStyle="bold"
+        android:visibility="gone"
+
+        android:layout_marginBottom="20dp"
+        android:onClick="ship"></TextView>
+    <TextView
+        android:id="@+id/shipped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="The order has been shipped"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:onClick="ship"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
